@@ -31,7 +31,5 @@ PubSubClient (cliente MQTT para o Arduino)
 
 Autor: Damião Costa de Oliveira
 
-* [Linkedin](linkedin.com/in/damião-c-031190136)
-
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-costa-c-honesto-3b46b2205/)]
 
