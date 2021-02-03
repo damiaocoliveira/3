@@ -16,7 +16,7 @@ PubSubClient (cliente MQTT para o Arduino)
 
 * [PubsubClient](https://www.arduino.cc/reference/en/libraries/pubsubclient/) 
 
-# Materiais utilizados para a execução do projeto:
+# Materiais
 
 * [Arduino Uno](https://www.arduino.cc/)
 
