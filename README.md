@@ -11,13 +11,20 @@ UIPEthernet (conexão do ENC28J60 com o Arduino)
 PubSubClient (cliente MQTT para o Arduino)
 
 ## Material
-Arduino Uno
 
-Módulo Ethernet (ENC28J60)
+* [UIPEthernet](https://github.com/UIPEthernet/UIPEthernet)
 
-Sensor Magnético (MC-38)
+* [PubsubClient](https://github.com/knolleary/pubsubclient) 
 
-*[Jumpers](https://www.arduino.cc/search?q=jumpers&tab=store)
+# Materiais utilizados para a execução do projeto:
+
+* [Arduino Uno](https://www.arduino.cc/)
+
+* [Módulo Ethernet (ENC28J60)](https://www.arduino.cc/search?q=M%C3%B3dulo%20Ethernet%20%28ENC28J60%29)
+
+* [Sensor Magnético (MC-38)](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-magnetico-com-fio-para-alarme-mc-38/)
+
+* [Jumpers](https://www.arduino.cc/search?q=jumpers&tab=store)
 
 ## Circuito
 ![imagem1](https://camo.githubusercontent.com/ad1da211b35b60b23fb095a64e76dc6504d0c3229e853bd82a69a4d5d27bbb88/68747470733a2f2f692e696d6775722e636f6d2f594947477453472e706e67) 
