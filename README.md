@@ -26,12 +26,12 @@ PubSubClient (cliente MQTT para o Arduino)
 
 * [Jumpers](https://www.arduino.cc/search?q=jumpers&tab=store)
 
-## Circuito
+# Circuitos
 ![imagem1](https://camo.githubusercontent.com/ad1da211b35b60b23fb095a64e76dc6504d0c3229e853bd82a69a4d5d27bbb88/68747470733a2f2f692e696d6775722e636f6d2f594947477453472e706e67) 
 
 Autor: Damião Costa de Oliveira
 
-![Linkedin](linkedin.com/in/damião-c-031190136)
+* [Linkedin](linkedin.com/in/damião-c-031190136)
 
 
 
