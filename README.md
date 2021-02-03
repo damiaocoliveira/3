@@ -24,4 +24,4 @@ Jumpers
 
 Autor: Damião Costa de Oliveira
 
-![Linkedin](linkedin.com/in/damião-c-031190136)
+![Linkedin](https://www.linkedin.com/feed/)
