@@ -1,4 +1,4 @@
-# 3
+# projeto-mqtt-damiao 
 
 # Objetivo
 O projeto tem por objetivo, utilizar um Arduino Uno e Sensor Magnético para monitorar a porta de um Rack de Rede, demonstrando se ela está ABERTO ou FECHADO; posteriormente, deve-se enviar essa informação via Internet utilizando o protocolo MQTT (Message Queuing Telemetry Transport) para um servidor MQTT hospedado na Amazon Web Service (AWS) e exibir a informação em um cliente MQTT (MQTT Dash) instalado em um Smartphone, conforme imagem abaixo.
