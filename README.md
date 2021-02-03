@@ -10,8 +10,6 @@ Foram utilizadas as seguintes bibliotecas:
 UIPEthernet (conexão do ENC28J60 com o Arduino)
 PubSubClient (cliente MQTT para o Arduino)
 
-# Biblioteca
-
 * [UIPEthernet](https://www.arduino.cc/reference/en/libraries/uipethernet/)
 
 * [PubsubClient](https://www.arduino.cc/reference/en/libraries/pubsubclient/) 
