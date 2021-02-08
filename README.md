@@ -31,33 +31,35 @@ Autor: Damião Costa de Oliveira
 
 # Código
 
-#include <PubSubClient.h>
+int pino2 = 2;      //Cria uma variável para o pino 2
+bool estado_sensor; //Cria uma variável para armazenar o estado do sensor
 
 #include <UIPEthernet.h>
 #include <utility/logging.h>
+#include <PubSubClient.h>
 
 #include <SPI.h>
-
-if estado_sensor 
-
-boolean mensagem; 
+boolean mensagem;
 
 //Define o endereço MAC que será utilizado
-byte mac[] = {0xCC, 0x4D, 0x47, 0xFD, 0x02, 0xAB};
+byte mac[] = {0XCA, 0X2E, 0XBF, 0XEC, 0XF0, 0X21};
 
 //Inicia o cliente Ethernet
 EthernetClient client;
 
-PubSubClient mqttClient(client);
+PubSubClient mqqtClient(client); // Inicia o cliente PubSubClient
 
-void setup() {
+void setup()
+{
     //Inicia o controlador Ethernet e solicita um IP para o servidor de DHCP
     Ethernet.begin(mac);
 
     //Inicia o monitor Serial
     Serial.begin(9600);
 
-    mqttClient.setServer("3.87.59.89",1883);
+    pinMode(pino2, INPUT_PULLUP);
+
+    mqqtClient.setServer("54.173.148.114", 1883);
 
     //Exibe no Monitor Serial as informações sobre o IP do Arduino
     Serial.print("O IP do Arduino e: ");
@@ -73,27 +75,27 @@ void setup() {
 
     //Exibe uma linha em branco
     Serial.println("");
-
 }
 
-void loop() {
-    mqttClient.connect("damiao");
-    mensagem = mqttClient.publish("damiao-t","Olá Marte!");
-    mqttClient.loop();
-    Serial.println(mensagem);
-    delay(500);
+void loop()
+{
+    mqqtClient.connect("damiao"); //Define o nome do cliente MQTT
 
     estado_sensor = digitalRead(pino2);
-    if(estado_sensor == 0) {
-    Serial.println ("RACK FECHADO!");
-    delay(1000);
-  }
 
-    else{
-    Serial.println ("RACK ABERTO!");
-    delay(1000);
-  }
+    if (estado_sensor == 1)
+    {
+        mensagem = mqqtClient.publish("damiao-t", " RACK ABERTO ! ");
+        Serial.println ("Aberto");
+    }   
+    else
+    {
+        mensagem = mqqtClient.publish("damiao-t", " RACK FECHADO ! ");
+        Serial.println ("Fechado");
+        }   
+     
+    mqqtClient.loop();
+
+    Serial.println(mensagem);
 
   }
-}
-
